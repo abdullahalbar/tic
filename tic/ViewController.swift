@@ -9,17 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var backgroundview: UIView!
+    @IBOutlet weak var Olabel: UILabel!
+    @IBOutlet weak var Xlabel: UILabel!
+    var labelarray : [UILabel]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+labelarray = [Xlabel , Olabel]
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+ 
+    @IBAction func screentap(sender: AnyObject) {
+    print("screen")
+    
+        for label in labelarray {
+        
+            print("label hi" + label.text!)}
+        
+    
+ }
 }
 
+func alertmassege(value : String) {
+
+    
+}
